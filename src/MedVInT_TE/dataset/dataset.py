@@ -35,7 +35,7 @@ class Binary_VQA_Dataset(Dataset):
         self.choice_list = np.asarray(data_info.iloc[:,-5:-1])
         self.answer_list = np.asarray(data_info['Answer'])
         self.answer_label_list = np.asarray(data_info['Answer_label'])
-        self.tokenizer = LlamaTokenizer.from_pretrained('../../LLAMA_Model/tokenizer')
+        self.tokenizer = LlamaTokenizer.from_pretrained('LearnItAnyway/llama-7b-hf-28q_4bit-128g_WVU')
         special_tokens_dict = {'mask_token': "</s>",
                                'eos_token': "</s>",
                                'bos_token': "<s>",

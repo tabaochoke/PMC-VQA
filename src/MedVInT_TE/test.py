@@ -22,8 +22,8 @@ from models.llama.vqa_model import Binary_VQA_Model
 @dataclass
 class ModelArguments:
     embed_dim: Optional[int] = field(default=768)
-    pretrained_tokenizer:  Optional[str] = field(default="../../LLAMA_Model/tokenizer")
-    pretrained_model: Optional[str] = field(default="../../LLAMA_Model/llama-7b-hf")
+    pretrained_tokenizer:  Optional[str] = field(default="LearnItAnyway/llama-7b-hf-28q_4bit-128g_WVU")
+    pretrained_model: Optional[str] = field(default="LearnItAnyway/llama-7b-hf-28q_4bit-128g_WVU")
     image_encoder: Optional[str] = field(default="CLIP")
     pmcclip_pretrained: Optional[str] = field(default="./models/pmc_clip/checkpoint.pt")
     clip_pretrained: Optional[str] = field(default="openai/clip-vit-base-patch32")
